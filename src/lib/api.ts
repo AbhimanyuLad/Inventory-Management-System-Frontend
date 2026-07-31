@@ -21,7 +21,8 @@ import type {
   ResetPasswordPayload,
 } from '@/types';
 
-const BASE_URL = 'http://localhost:8080/booktrack';
+//const BASE_URL = 'http://localhost:8080/booktrack';
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 const TOKEN_KEY = 'booktrack.token';
 const USER_KEY = 'booktrack.user';
